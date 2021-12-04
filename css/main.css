@@ -1,0 +1,99 @@
+/* --- Disculpe el desorden del css profe --- */
+/* --- Fuentes perzonalizadas --- */
+@font-face {
+    font-family: "FueteLogo";
+    src: url(../fonts/freehand521-bt.ttf);
+}
+
+@font-face {
+    font-family: "FueteTitulo";
+    src: url(../fonts/Quesha.ttf);
+}
+
+/* --- Etiquetas --- */
+body {
+    background-color: rgb(255, 241, 247);
+}
+
+h1 {
+    font-family: "FueteTitulo";
+    font-size: 100px;
+}
+
+h2 {
+    padding-top: 5px;
+}
+
+footer {
+    background-color: #86c7b9;
+    font-style: italic;
+}
+
+/* --- Clases --- */
+.navbar .nav-item .nav-link {
+    font-family: "FueteLogo";
+    font-size: 25px;
+    color:cornsilk;
+    padding: 15px;
+}
+
+.fab{
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.deco-none {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.deco-none:hover {
+   color: #949494;
+}
+
+.row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-direccion {
+    font-size: 22px;
+}
+
+.form-cont {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.form-label {
+    padding-top: 10px;
+}
+
+.cont {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.text-contacto {
+    font-size: 25px;
+}
+
+.p-contacto {
+    font-size: 22px;
+}
+
+.columna-card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card:hover {
+    background-color: #ebebeb;
+}
+
+.card-text {
+    font-size: 20px;
+    text-align: center;
+}
