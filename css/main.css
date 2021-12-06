@@ -30,6 +30,10 @@ footer {
 }
 
 /* --- Clases --- */
+.navbar-brand:hover {
+    filter: saturate(180%);
+}
+
 .navbar .nav-item .nav-link {
     font-family: "FueteLogo";
     font-size: 25px;
@@ -96,4 +100,19 @@ footer {
 .card-text {
     font-size: 20px;
     text-align: center;
+}
+
+.car-img{
+    height: 500px;
+}
+
+@media screen and (max-width: 750px) {
+    .car-img{
+        height: 350px;
+    }
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }

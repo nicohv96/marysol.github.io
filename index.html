@@ -17,84 +17,88 @@
     <link rel="shortcut icon" href="img/logo_icono.ico">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- /Navbar -->
-
     <!-- Header -->
-    <!-- Las imagenes del carrusel al principio eran de mas calidad pero tuve que degradarlas un poco porque se tardaban en cargar -->
     <header>
-        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/imagen1.jpg" class="d-block w-100" alt="..." height="550px">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/imagen2.jpg" class="d-block w-100" alt="..." height="550px">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/imagen3.jpg" class="d-block w-100" alt="..." height="550px">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </nav>
+        <!-- /Navbar -->
     </header>
     <!-- /Header -->
-
+    
     <!-- Contenido -->
-    <div class="container cont">
-        <div class="row text-center">
-            <div class="col">
-                <h1>¿Quienes somos?</h1>
+    <!-- Las imagenes del carrusel al principio eran de mas calidad pero tuve que degradarlas un poco porque se tardaban en cargar -->
+    <main class="container-fluid">
+        <section>
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/imagen1.jpg" class="d-block w-100 car-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagen2.jpg" class="d-block w-100 car-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagen3.jpg" class="d-block w-100 car-img" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="col">
-                <p style="font-size: 24px;">Somos una peque&ntilde;a pyme que surgi&oacute; durante la pandemia la cual se dedica al crochet. Esta fue una pasi&oacute;n heredada por mi madre, ella me inspiro a comenzar este negocio y seguir creciendo d&iacute;a tras d&iacute;a, nos ubicamos en la ciudad de Formosa y con gusto recibimos su pedido para realizarlo a medida</p>
+        </section>
+        
+        <section class="container cont">
+            <div class="row text-center">
+                <div class="col">
+                    <h1>¿Quienes somos?</h1>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="row text-center">
+                <div class="col">
+                    <p style="font-size: 24px;">Somos una peque&ntilde;a pyme que surgi&oacute; durante la pandemia la cual se dedica al crochet. Esta fue una pasi&oacute;n heredada por mi madre, ella me inspiro a comenzar este negocio y seguir creciendo d&iacute;a tras d&iacute;a, nos ubicamos en la ciudad de Formosa y con gusto recibimos su pedido para realizarlo a medida</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- /Contenido -->
 
     <!-- Footer -->
-    <footer>
+    <footer class="container-fluid">
         <div class="container pt-3 text-white">
             <div class="row">
                 <div class="col text-center">
