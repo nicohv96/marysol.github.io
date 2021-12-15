@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mar&Sol</title>
+    <link rel="shortcut icon" href="img/logo_icono.ico">
+    <title>Mar&Sol - Tienda de Crochet</title>
 
-    <!-- CDN Bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <!-- CDN Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
      <!-- Css perzonalizado-->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="img/logo_icono.ico">
 </head>
 <body>
+    <span id="inicio"></span>
+    <a class="ir-arriba" href="#inicio" id="go-up">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-small">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo.png" alt="logo">
@@ -29,15 +33,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto" data-animation="escala">
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
+                            <a class="nav-link" href="#productos">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -46,42 +50,24 @@
         <!-- /Navbar -->
     </header>
     <!-- /Header -->
-    
+
     <!-- Contenido -->
-    <!-- Las imagenes del carrusel al principio eran de mas calidad pero tuve que degradarlas un poco porque se tardaban en cargar -->
     <main class="container-fluid">
+        <!-- inicio -->
         <section>
-            <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/imagen1.jpg" class="d-block w-100 car-img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/imagen2.jpg" class="d-block w-100 car-img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/imagen3.jpg" class="d-block w-100 car-img" alt="...">
+            <div class="container-fluid" id="c-home">
+                <div class="row" id="r-home">
+                    <div class="col" id="col-home">
+                        <img src="img/imagen_inicio.jpg" id="img-home">
+                        <p class="texto-encima">Vendemos la mejor indumentaria tejida a mano</p>
+                        <button class="boton-encima btn">Comprar</button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
-        
+        <!-- /inicio -->
+
+        <!-- About us -->        
         <section class="container cont">
             <div class="row text-center">
                 <div class="col">
@@ -90,16 +76,215 @@
             </div>
             <div class="row text-center">
                 <div class="col">
-                    <p style="font-size: 24px;">Somos una peque&ntilde;a pyme que surgi&oacute; durante la pandemia la cual se dedica al crochet. Esta fue una pasi&oacute;n heredada por mi madre, ella me inspiro a comenzar este negocio y seguir creciendo d&iacute;a tras d&iacute;a, nos ubicamos en la ciudad de Formosa y con gusto recibimos su pedido para realizarlo a medida</p>
+                    <p style="font-size: 24px; text-align: justify">Somos una peque&ntilde;a pyme que surgi&oacute; durante la pandemia la cual se dedica elaborar y <b>vender productos de crochet</b>. Esta fue una pasi&oacute;n heredada por mi madre, ella me inspiro a comenzar este negocio y seguir creciendo d&iacute;a tras d&iacute;a, nos ubicamos en la ciudad de Formosa y con gusto recibimos su pedido.</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col">
+                    <h1>¿Como trabajamos?</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <p style="font-size: 24px; text-align: justify">Trabajamos con materiales de primera calidad, con dise&ntilde;os 100% originales o diseños a pedido. Nos enfocamos siempre en la mejor atenci&oacute;n para que el cliente quede satisfecho. Podes hablarnos por nuestras redes sociales o a trav&eacute;s de la página para realizar su pedido. Hacemos envios a todo el pa&iacute;s.</p>
                 </div>
             </div>
         </section>
+        <!-- /About us -->
+        
+        <!-- Productos -->
+        <section id="productos" class="container-fluid cont">
+            <div class="row text-center">
+                <h1>Productos</h1>
+                <h4>Selecci&oacute;n de algunos de nuestros productos.</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 columna-card">
+                    <div class="card mx-auto" style="width: 18rem; border-radius: 10px;">
+                        <img src="img/imagen_card_1.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Cartera tejida</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4  columna-card">
+                    <div class="card mx-auto" style="width: 18rem; border-radius: 10px;">
+                        <img src="img/imagen_card_2.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Gorro de lana rojo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4  columna-card">
+                    <div class="card mx-auto" style="width: 18rem; border-radius: 10px;">
+                        <img src="img/imagen_card_3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Cuello tejido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 columna-card">
+                    <div class="card mx-auto" style="width: 18rem; border-radius: 10px;">
+                        <img src="img/imagen_card_4.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Boina de lana rosa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4  columna-card">
+                    <div class="card mx-auto" style="width: 18rem; border-radius: 10px;">
+                        <img src="img/imagen_card_5.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Guantes de lana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4  columna-card">
+                    <div class="card mx-auto" style="width: 18rem; border-radius: 10px;">
+                        <img src="img/imagen_card_6.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Cartuchera tejida</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Productos --> 
+
+        <!-- Preguntas frecuentes -->
+        <section class="container-fluid cont">
+            <div class="row text-center">
+                <h1>Preguntas frecuentes</h1>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    ¿Tiene garantía?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>La garantia cubre si el producto es recibido con una falla</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    ¿Cuánto cuestan los productos?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>El valor del producto viene dado por el costo del material (lana) junto con la mano de obra por lo que varia segun la complejidad del mismo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    ¿Qué métodos de pago aceptan?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Aceptamos efectivo, transferencias bancarias y transferencias por mercado pago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    ¿En cuánto tiempo tendré mi producto?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Acemos envios a trav&eacute;s de Andreani, dependiendo del punto del pais en el que se encuentre</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Preguntas frecuentes --> 
+
+        <!-- Contacto -->
+        <section id="contacto" class="container cont">
+            <div class="row text-center">
+                <h1>Contacto</h1>
+                <h4 class="pb-4" style="text-align: justify">Para cualquier consulta p&oacute;ngase en contacto con nosotros a trav&eacute;s de nuestro Email o por nuestras redes sociales.</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 form-cont">
+                    <form action="#">
+                        <div class="mb-3">
+                            <label  class="form-label">Nombre y Apellido</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">Asunto</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 text-end">
+                            <button type="button" class="btn btn-outline-secondary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-6 text-center">
+                    <div class="row">
+                        <i class="far fa-envelope pt-4 text-contacto">&nbsp;Email</i>
+                        <p class="p-contacto">mar&sol@gmail.com</p>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-whatsapp pt-4 text-contacto">&nbsp;Whatsapp</i>
+                        <p class="p-contacto">+54 9 370 428-4744</p>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marked-alt pt-4 text-contacto">&nbsp;Direcci&oacute;n</i>
+                        <p class="p-contacto">B° Juan Manuel de Rosas - Manzana 207 - Cs 8</p>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-instagram pt-4 text-contacto">&nbsp;Instagram</i>
+                        <p class="p-contacto">crochetera_fsa</p>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-facebook-square pt-4 text-contacto">&nbsp;Facebook</i>
+                        <p class="p-contacto">MarySol GP</p>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacto --> 
     </main>
     <!-- /Contenido -->
 
     <!-- Footer -->
-    <footer class="container-fluid">
-        <div class="container pt-3 text-white">
+    <footer>
+        <div class="container-fluid pt-3 text-white">
             <div class="row">
                 <div class="col text-center">
                     <a href="https://www.instagram.com/crochetera_fsa/?hl=es" target="_blank" class="link-light deco-none">
@@ -107,10 +292,7 @@
                     </a>
                     <a href="https://www.facebook.com/marysol.gp" target="_blank" class="link-light deco-none">
                         <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a href="#" target="_blank" class="link-light deco-none">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>                  
+                    </a>                
                 </div>
             </div>
             <div class="row">
@@ -120,24 +302,23 @@
                 </div>
                 <div class="col-sm-12 col-md-4 text-center">
                     <h2>Email</h2>
-                    <p class="footer-direccion">mar&sol@gmial.com</p>
+                    <p class="footer-direccion">mar&sol@gmail.com</p>
                 </div>
                 <div class="col-sm-12 col-md-4 text-center">
                     <h2>Direcci&oacute;n</h2>
                     <p class="footer-direccion">B° Juan Manuel de Rosas - Manzana 207 - Cs 8</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="copy">
                 <div class="col text-center">
-                    <p>Copyright &copy; 2021</p>
+                    <p id="p-copy">Copyright &copy; 2021</p>
                 </div>
             </div>
         </div>
     </footer>
     <!-- /Footer -->
-
-    <!-- CDN Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
