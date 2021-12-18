@@ -386,3 +386,19 @@ footer a {
         padding-top: 80px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .texto-encima{
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "FuenteHome";
+        font-size: 40px;
+        color: #161829;
+        word-spacing: 20px;
+        letter-spacing: 2px;
+    }
+}
