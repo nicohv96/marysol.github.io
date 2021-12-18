@@ -1,0 +1,404 @@
+/* --- Disculpe el desorden del css profe --- */
+/* --- Fuentes perzonalizadas --- */
+@font-face {
+    font-family: "FuenteLogo";
+    src: url(../fonts/freehand521-bt.ttf);
+}
+
+@font-face {
+    font-family: "FuenteTitulo";
+    src: url(../fonts/Quesha.ttf);
+}
+
+@font-face {
+    font-family: "FuenteHome";
+    src: url(../fonts/AstralSisters.ttf);
+}
+
+/* --- Etiquetas --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFEAE6;
+}
+
+main.container-fluid {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1 {
+    font-family: "FuenteTitulo";
+    font-size: 100px;
+}
+
+h2 {
+    padding-top: 5px;
+}
+
+footer {
+    background-color: #86c7b9;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+/* --- IDs --- */
+#img-home {
+    width: 100%;
+    height: 500px;
+}
+
+ #productos { 
+    background-color:#E8D1D1;
+ }
+
+ #col-home {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+ }
+
+ #c-home, #r-home, #col-home {
+    padding: 0px;
+    margin: 0px;
+ }
+
+ #copy {
+    background: linear-gradient(to right, #8AD9DE, #86C7B9, #8AD9DE);
+ }
+
+ #p-copy {
+     font-size: 15px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+/* --- Clases --- */
+.texto-encima{
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "FuenteHome";
+    font-size: 80px;
+    color: #161829;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+}
+
+.boton-encima{
+    font-family: "FuenteHome";
+    background-color: #86c7b9;
+    height: 60px;
+    width: 150px;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.boton-encima:hover{
+    font-family: "FuenteHome";
+    background-color: #659187;
+    color: #5a5656;
+    opacity: 1;
+}
+
+.ir-arriba {
+	display:block;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+	background:#eb576d;
+	font-size:20px;
+	color:#fff8dc;
+	position: fixed;
+	bottom:10px;
+	right:10px;
+    text-decoration: inherit;
+    z-index: 100;
+    transition: transform .2s;
+}
+
+.ir-arriba:hover {
+    color: #86c7b9;
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.carousel-control-next-icon {
+    background-color: #383838;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.carousel-control-prev-icon {
+    background-color: #383838;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.navbar-brand {
+    transition: transform .2s;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.01);
+    filter: saturate(180%);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+  
+.navbar-nav li {
+    margin-right: 30px;
+}
+
+.navbar-nav a {
+    position: relative;
+    display: block;
+    padding: 5px;
+}
+
+.navbar-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #df9fb6);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.navbar-nav a:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar-nav[data-animation="escala"] a::before {
+    transform-origin: right;
+}
+
+.navbar-nav[data-animation="escala"] a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+.navbar .nav-item .nav-link {
+    font-family: "FuenteLogo";
+    font-size: 25px;
+    color:#fff8dc;
+}
+
+.fab{
+    font-size: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.deco-none {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.deco-none:hover {
+   color: #949494;
+}
+
+.row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-direccion {
+    font-size: 22px;
+}
+
+.form-cont {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 1px 1px #383838;
+}
+
+.form-label {
+    padding-top: 10px;
+}
+
+.cont {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-contacto {
+    font-size: 25px;
+}
+
+.p-contacto {
+    font-size: 22px;
+}
+
+.columna-card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card {
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.car-img{
+    height: 500px;
+}
+
+footer a {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+}
+
+/* Puntos de quiebre */
+@media screen and (max-width: 1300px) {
+    .texto-encima{
+        height: 400px;
+        width: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "FuenteHome";
+        font-size: 80px;
+        color: #161829;
+        word-spacing: 20px;
+        letter-spacing: 2px;
+    }
+
+    .boton-encima{
+        font-family: "FuenteHome";
+        background-color: #86c7b9;
+        height: 60px;
+        width: 150px;
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        color: #ffffff;
+        border-radius: 10px;
+        transition: transform .2s;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    h1 {
+        font-family: "FuenteTitulo";
+        font-size: 80px;
+    }
+    
+    .navbar .nav-item .nav-link {
+        font-family: "FuenteLogo";
+        font-size: 25px;
+        color:cornsilk;
+        width: 120px;
+    }
+
+    .texto-encima{
+        height: 200px;
+        width: 400px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "FuenteHome";
+        font-size: 50px;
+        color: #161829;
+        word-spacing: 20px;
+        letter-spacing: 2px;
+    }
+
+    .boton-encima{
+        font-family: "FuenteHome";
+        background-color: #86c7b9;
+        height: 50px;
+        width: 130px;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        color: #ffffff;
+        border-radius: 10px;
+        transition: transform .2s;
+    }
+
+    .cont {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    #img-home{
+        height: 400px;
+    }
+
+    .ir-arriba {
+        display:none;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width:100%;
+        z-index: 100;
+    }
+
+    #c-home {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .texto-encima{
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "FuenteHome";
+        font-size: 40px;
+        color: #161829;
+        word-spacing: 20px;
+        letter-spacing: 2px;
+    }
+}
